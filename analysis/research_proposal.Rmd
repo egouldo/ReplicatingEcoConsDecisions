@@ -49,15 +49,9 @@ The final components of my research will involve the use of case studies of real
 
 **Problem Context: Demonstrating the benefit of environmental flows**
 
-Chris Jones has been tasked with demonstrating the benefit of environmental water allocations across Victoria
+Objective: to develop a decision support system for finding the optimal management strategy through time and space. The strategy could include the following actions:environmental flows, reveg, fencing and others.
 
-"using our understanding of responses to individual flow events to evaluate flow regimes in different future scenarios"
-
-"Evaluate the relative impacts of different management actions (flows, reveg, fencing, etc.) to show when/where/how can you optimise management”
-
-What's the decision?
-
-Managing environmental flows
+The question is, which (if any) environmental flow regime, in conjunction with other management actions, will fulfill some river-health objectives. The objectives are as yet unclear. Future scenarios and responses to flow regimes are to be informed using knowledge about responses to individual flow events.
 
 ## Proposed Study Design Methodology
 
@@ -69,45 +63,54 @@ Conceptual re-analysis uses the same raw data as some original study, but applie
 
 Teams make their own decision about how best to model both the system and the decision context. They will also be given freedom of choice with respect to the overarching decision framework they wish to follow. They are required to report on their models, potentially in the form of methods and results sections, as would appear in a paper documenting the development of a DSS.
 
+Variability in both numerical outputs, and the resultant recommended decisions will be measured across all teams.
+
 2. Round Two: Direct re-analysis
 
 In the second round, teams first score the transparency and likely reproducibility of a randomly assigned DSS using the checklist derived from Chapter 2 of my research (See Table 1 above). Next, they attempt to replicate the assigned DSS in full. The replicate will be scored against the 'original', for both accuracy in numerical outputs, as well as whether the recommended decision is the same (or similar *enough*). 
 
-### Explanation and Rationale
 
-What is the point of this design (benefit for me)?
+### Explanation and Rationale (relevant to Elise's project)
 
-- Conceptual reanalysis: Fidler: "Provide the opportunity to assess the extent of variability among analytic approaches and choices" i.e. the robustness of decisions. Measure the variability in a) numerical outputs (if applicable), b) decisions. Examine *where* in the decision process do studies vary. 
-- direct re-analysis
-- Checklist vs. replication - evaluate the effectiveness of the checklist at scoring the reproducibiltiy of a DSS.
-- numerical vs. decision
-- Conceptual vs. direct re-analysis: compare the variation 
+The conceptual re-analysis facilitates the extent of variability among analytic approaches and choices [@Fidler:2017he]. By measuring the variability in both numerical outputs, and the resultant recomended decisions across all teams, we can measure the robustness of decisions to analytic and modelling choices throughout the decision process. In addiiton, the source of any variation can be pin-pointed down to specific points within the overarching decision process, potentially highlighting 
 
-Questions: 
-Different decision, given some input scenarios?
+The direct re-analysis round accomplishes a few different things in its own right:
+Firstly, by comparing the checklist scores against the direct re-analysis scores, I will be able to evaluate the effectiveness of the checklist at being able to evaluate the reproducibility of a replication. Secondly, a comparison of variation in numerical outputs against variation in decision outcomes between the original and the replicate will give *some* indication of the robustness of decision to the DSS.
 
-### Questions about the study design that need consideration
+The main line of analysis involves comparing the variation across teams in decision outcomes betweeen the original studies (round one) and the replicates (round two). This will give a measure of the reproducibility of the decision.
 
-How far to go to specify the decision context?
+### Format
 
-Do we repeat this for multiple catchments?
+The study will occur within a workshop setting, held over one or two days. During the workshop, it is envisioned Chris is available for questioning about both the problem context, and the data. All relevant data should be made available for participants. Teams are then given some period of time to build and run the flow scenarios through the model, and then to write the methods section.
 
-### Feasibility
+Potentially, round two could also be held as a workshop, after teams have had the chance to replicate the DSSs from round one. Original study teams could be consulted by the replicate study teams, in instances where the direct re-analysis in round two was unsuccessful. This would highlight key areas to target to improve transparency in methodological and modelling reporting practices.
 
-One issue is that we need to entice people to participate. This could be using funds (which are available). Another approach would be to offer co-authorship.
+### Some considerations for the future
 
-## Benefits of this work for Chris
+**Mutual Benefits**
 
-Pilot study... what is the best 
+- How can this work benefit the VEFMAP project?
+- Pilot study, scoping potential decision and modelling frameworks for applying across all catchments. The study could also act as a vetting process for identifying appropriate teams and approaches for applying across all catchments.
+- Sensitivity analysis: the study could serve as a form of sensitivity analysis, providing evidence about both the robustness of different models and the processes used to derive those models. This type of replication analysis would be able to test whether the decision is reasonably robust to different processes, or tools.
 
-1. MODELS...
-2. sensitivity analysis However, it could potentially serve as a form of sensitivity analysis, providing evidence about the robustness of different models, but also about the processes used to derive those models. This type of replication analysis would be able to test whether the decision is reasonably robust to different processes, or tools.
+**Study Design**
 
+- Do we repeat this for multiple catchments? Is there scope for some sort of replication experiment across multiple catchments so as to test the generalisability of the DSSs?  
+- Below I propose some examples of ‘decision-points’ within the broader decision process that may impede the reproducibility of a decision. These are points of departure or variation occurring within the development of a DSS that may result in a different decision-outcome, should the process be repeated – either by the same analyst in the future, or by another independent analyst.
 
+1. Problem formulation is a critical phase of the decision process but is often neglected or at least poorly documented when it comes to published applications of decision support systems in ecology and conservation. Human values shape preferences about the acceptability of decision outcomes in terms of fulfilling conservation objectives and should therefore be properly captured in objectives and performance measures [@Conroy:2013tc]. Decision modelling outputs may be sensitive to the specification of the performance measure [-@Giljohann:2014tv]. Failing to properly incorporate decision-maker and stakeholder values may therefore influence the reproducibility of a decision, resulting in sub-optimal decisions that do not adequately meet the true objectives. *Provide document detailing full decision problem context, including all objectives, performance measures, and complete set of decision alternatives, OR provide only very general decision context information?*
+2. Scenario analyses are often used to make a case for implementing one management strategy over others. However, Law et al. [-@Law:2017ia] emphasise that the selection of scenarios may influence inferences about the appropriate course of action – choosing scenarios that are impossible or highly improbable may yield the impression that a particularly positive or negative outcome is likely. Thus, it is not only the modelling inputs into decisions that should be scrutinised in terms of reproducibility, but also the choice scenarios we wish to run through them. *Hold flow scenarios constant or leave open-ended?*
 
+**Feasibility**
+
+One issue is that we need to entice people to participate. Can we pay them? Another approach would be to offer co-authorship. Any other suggestions?
 
 ### Model of Collaboration
 
-Importantly, because this is a real-world problem, I will need to ensure that Chris also benefits from this work. Given that Chris’ goals are currently unclear, it is difficult to specify now. 
+Following discussion on 7th June between Chris and Elise, three deliverables for the VEFMAP project have been identified:
+
+1. Workshop (Elise)
+2. Post-workshop summary report (Chris and Elise)
+3. Paper(s) (Elise, Libby, Fiona, Hannah, Chris, other co-authors)
 
 # References and Session Info
