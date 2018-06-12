@@ -3,7 +3,10 @@ title: "Research Proposal: Case Study in Replicating Decisions in Ecology and Co
 author: "Elise Gould"
 date: "12/06/2018"
 output: html_document
+bibliography: ../data/references.bib
 ---
+
+*Please note, this is a summarised version of the PhD research proposal*
 
 # Project Summary: Reproducibility and Transparency of Decisions in Ecology and Conservation
 
@@ -11,9 +14,13 @@ Successful biodiversity conservation and management is underpinned by effective 
 
 Failure to reproduce a large proportion of published studies in the fields of psychology and medicine has received considerable attention and provoked heated discussion among researchers in the broader scientific community.  Scientific credibility is underpinned by the assumption that findings are both real and replicable [@Nakagawa:2015bn]. As the recent “reproducibility crisis” debate illustrates, this assumption is often incorrect [@Nature:un].  For example, the Open Science Collaboration’s Psychology Reproducibility Project reported that less than half of published results could be reproduced [@OpenScienceCollaboration:2015cn]. Although large-scale direct replications are largely absent in ecology [@Nakagawa:2015bn], an initial assessment of the conditions found to foster reproducibility problems provide evidence that ecology as a discipline is at risk of a “reproducibility crisis” [@Fidler:2017he]. 
 
-## Project Scope: Reproducibility 
+## Research scope: reproducibility *of* decisions versus reproducibility *for* decision decisions
 
--> WHY reproducibility of decisions
+Reproducibility research in ecology has largely focused on the primary evidence-base. I draw on the conservation decision-making (CDM) literature to distinguish between knowledge generated at the level of the individual study level (“primary evidence base”), and the translation of that information into a decision [@Dicks:2014gf], whereby evidence is collated, synthesised, and transformed into decisions, ideally using some formal decision support system [@Gardner:2018dm]. Most decision support systems developed using a structured framework utilise one or more “decision tools” at various steps in the decision-making process, comprising conceptual or mechanistic models, representing all or part of the system in question [@Dicks:2014gf, see discussion point in Chapter 3 for a definition of the distinction between tools and systems].
+
+One exception to the focus on the primary evidence base, is Morrison et al.’s [-@Morrison:2016cd]replication study of the Population Viability Analysis literature. They discuss the potential implications of the non-reproducibility of studies and models on the decision-making process. Firstly, non-reproducible predictions undermine the credibility of the original model, and therefore any decisions informed by that evidence. Any predictions are therefore unreliable, and may result in finite resources being directed inefficiently, and in opportunity costs. Thirdly, the effectiveness of an intervention may not be able to be evaluated against the predictions of the model if they are not reproducible. The ability to compare the outcome of an intervention against model predictions, and hence to measure progress towards the conservation objectives, is especially important in ecology and conservation: true randomized experimental design is often infeasible, such that the performance of a conservation action is measured against the counter-factual, which is often estimated using predictive models [@Law:2017ia]. Finally, if the original model predictions cannot be reproduced, the decision-maker is prevented from comparing and evaluating revised models with updated parameters against previous models. This is relevant for contexts where decision-making is informed by ongoing monitoring programmes, such as in adaptive management-based conservation. 
+
+This work is a good initial consideration of how reproducibility issues might impact decisions, and it echoes work in the conservation decision-making (CDM) literature underscoring the importance of a ‘robust’ evidence-base for informing management [@Dicks:2014gf; @Law:2017ia; @Sutherland:2017hc; @Gardner:2018dm]. While reproducibility for decisions – or the reproducibility of either raw evidence and/or decision-tools generating information informing decisions – is important, it fails to consider the broader decision process in which conservation decisions are made, and explicitly assumes that if the evidence-base is reproducible, then this should translate to reproducible decisions. Yet, decision-making is a “human enterprise” shaped by values and expectations [@Mukherjee:2018cb] and failing to integrate the human elements of decision-making in conservation may lead to sub-optimal outcomes [@Bennett:2017jh].  For this reason, I argue that reproducibility research in ecology and conservation should certainly continue advancing for the primary evidence-base, however, the scope of research should extend beyond evidence-generation, to examine the systematic use and synthesis of that evidence to inform decision-making. The focus of my PhD will therefore be on the reproducibility of decisions: or whether the entire decision-process can be repeated to reproduce the same decision.
 
 ## Research Aims and Objectives
 
@@ -26,7 +33,7 @@ suppressPackageStartupMessages(library(pander))
 suppressPackageStartupMessages(library(dplyr))
 
 dplyr::data_frame(Problem = c("**How do we measure the reproducibility of a DSS?**\\\n \\\n What are the epistemic functions of replications for DSS?\ \n ",
-                              "**What are the reproducibility issues particular to DSSs for EcoConsDM?**\\\n \\\n Causes and solutions of crisis NHST focussed.",
+                              "**What are the reproducibility issues particular to DSSs for EcoConsDM?**\\\n \\\n Causes and solutions of crisis are null-hypothesis significance testing (NHST) focussed.",
                               "**Does Eco/ConsDM have a reproducibility problem?**\\\n \\\n Response to Fidler et al. (2017)’s call for assessment of completeness and transparency of methodological and statistical reporting in ecology journals. Extend to decision-making problems for EcoCons.",
                               "**How do you replicate a DSS?**"),
                   Description = c("Chapter 1: typology for reproducibility of DSSs", "Chapter 2: QRPs for non-hypothesis testing research.", "Chapter 3: Systematic Review of Reproducibility of DSSs", "Chapter(s) 4 / 5: Replication experiment, case studies"),
@@ -38,12 +45,69 @@ dplyr::data_frame(Problem = c("**How do we measure the reproducibility of a DSS?
 
 # Environmental Water Allocations: case study in replicating decisions
 
-## Background
+The final components of my research will involve the use of case studies of real-world ecological and conservation decisions. The objective of the case studies is to demonstrate an application of one or several types of reproducibility proposed in the typology in Chapter One. It would also serve as a proof-of-concept for replicating a decision support system. It is with respect to this work, that I seek collaboration.
 
-## Aims / Objectives
+**Problem Context: Demonstrating the benefit of environmental flows**
 
-## Proposed Methodology
+Chris Jones has been tasked with demonstrating the benefit of environmental water allocations across Victoria
 
-## Feasibility
+"using our understanding of responses to individual flow events to evaluate flow regimes in different future scenarios"
 
-# References
+"Evaluate the relative impacts of different management actions (flows, reveg, fencing, etc.) to show when/where/how can you optimise management”
+
+What's the decision?
+
+Managing environmental flows
+
+## Proposed Study Design Methodology
+
+The format of the replication study will assume a crowd-sourced cross-over design, as suggested by Hannah Fraser, it is implemented in two rounds. This design is a variation on the 'red card' experiment (Silberzahn and Uhlmann, 2015). Each round implements a different type of replication / re-analysis. Multiple teams of researchers will be formed, with each team developing a DSS to address the problem in round one. In the second round, DSSs developed in round one are randomly assigned to teams for direct re-analysis.
+
+1. Round One: Conceptual Re-analysis
+
+Conceptual re-analysis uses the same raw data as some original study, but applies different statistical frameworks, assumptions, methods and models [@Fidler:2017he]. Each team is given equal access to the VEFMAP dataset that is sufficient for designing a DSS for the decision context. They are also given a document detailing the decision context, including specification of objectives (both fundamental and means), and information about relevant stakeholders and their values. Potentially, the full suite of candidate actions, and performance measures might also be supplied.
+
+Teams make their own decision about how best to model both the system and the decision context. They will also be given freedom of choice with respect to the overarching decision framework they wish to follow. They are required to report on their models, potentially in the form of methods and results sections, as would appear in a paper documenting the development of a DSS.
+
+2. Round Two: Direct re-analysis
+
+In the second round, teams first score the transparency and likely reproducibility of a randomly assigned DSS using the checklist derived from Chapter 2 of my research (See Table 1 above). Next, they attempt to replicate the assigned DSS in full. The replicate will be scored against the 'original', for both accuracy in numerical outputs, as well as whether the recommended decision is the same (or similar *enough*). 
+
+### Explanation and Rationale
+
+What is the point of this design (benefit for me)?
+
+- Conceptual reanalysis: Fidler: "Provide the opportunity to assess the extent of variability among analytic approaches and choices" i.e. the robustness of decisions. Measure the variability in a) numerical outputs (if applicable), b) decisions. Examine *where* in the decision process do studies vary. 
+- direct re-analysis
+- Checklist vs. replication - evaluate the effectiveness of the checklist at scoring the reproducibiltiy of a DSS.
+- numerical vs. decision
+- Conceptual vs. direct re-analysis: compare the variation 
+
+Questions: 
+Different decision, given some input scenarios?
+
+### Questions about the study design that need consideration
+
+How far to go to specify the decision context?
+
+Do we repeat this for multiple catchments?
+
+### Feasibility
+
+One issue is that we need to entice people to participate. This could be using funds (which are available). Another approach would be to offer co-authorship.
+
+## Benefits of this work for Chris
+
+Pilot study... what is the best 
+
+1. MODELS...
+2. sensitivity analysis However, it could potentially serve as a form of sensitivity analysis, providing evidence about the robustness of different models, but also about the processes used to derive those models. This type of replication analysis would be able to test whether the decision is reasonably robust to different processes, or tools.
+
+
+
+
+### Model of Collaboration
+
+Importantly, because this is a real-world problem, I will need to ensure that Chris also benefits from this work. Given that Chris’ goals are currently unclear, it is difficult to specify now. 
+
+# References and Session Info
