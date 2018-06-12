@@ -1,0 +1,49 @@
+---
+title: "Research Proposal: Case Study in Replicating Decisions in Ecology and Conservation"
+author: "Elise Gould"
+date: "12/06/2018"
+output: html_document
+---
+
+# Project Summary: Reproducibility and Transparency of Decisions in Ecology and Conservation
+
+Successful biodiversity conservation and management is underpinned by effective and robust decision-making [@Mukherjee:2018cb]. Decision-makers are tasked with allocating limited resources in the face of uncertainty about the effectiveness of alternative management interventions, and incomplete or inadequate scientific information. Moreover, environmental decisions often must be made in complex socio-economic and political contexts, with multiple stakeholders and multiple and/or competing objectives. Formal, structured approaches to decision-making under uncertainty, such as Structured Decision Making, are both implicitly and explicitly espoused as a pathway to more robust and reproducible conservation decisions [e.g. @Moore:2012ii; @Converse:2013wp; @Schreiber:2004to]. However, this claim to reproducibility remains untested, and a more nuanced consideration of what exactly reproducibility means in this application is lacking. Given that science is said to be in the grips of a “reproducibility crisis”, and that biased and unfair scrutiny in the broader socio-political climate of “alternative facts” threatens credibility of scientific knowledge [@Baillieul:2018jd], it is both essential and timely that the reproducibility of decision-support in ecology and conservation is given rigorous research attention. 
+
+Failure to reproduce a large proportion of published studies in the fields of psychology and medicine has received considerable attention and provoked heated discussion among researchers in the broader scientific community.  Scientific credibility is underpinned by the assumption that findings are both real and replicable [@Nakagawa:2015bn]. As the recent “reproducibility crisis” debate illustrates, this assumption is often incorrect [@Nature:un].  For example, the Open Science Collaboration’s Psychology Reproducibility Project reported that less than half of published results could be reproduced [@OpenScienceCollaboration:2015cn]. Although large-scale direct replications are largely absent in ecology [@Nakagawa:2015bn], an initial assessment of the conditions found to foster reproducibility problems provide evidence that ecology as a discipline is at risk of a “reproducibility crisis” [@Fidler:2017he]. 
+
+## Project Scope: Reproducibility 
+
+-> WHY reproducibility of decisions
+
+## Research Aims and Objectives
+
+This major goal of this PhD is to investigate the transparency and reproducibility of decisions generated from structured approaches to conservation decision-making (such as Structured Decision Making, SDM). The first aim of this research is to expand and develop a conceptual understanding of “reproducibility” that is fit for application in conservation decision-making. Existing approaches to reproducibility almost exclusively focus on hypothesis-testing based research, however in applied ecology and conservation technical approaches draw primarily on decision-analytic tools and methods for decision-making. This typology of reproducibility will be sensitive to the particularities of the data, methods and questions commonly encountered within this context. By taking decision-support systems (DSSs) as its unit of interest, this research aims to identify critical points in the decision process that threaten the reproducibility of ecological decisions and undermine conservation success. Secondly, I aim to systematically review the published literature on DSSs to evaluate the magnitude and extent of the “reproducibility crisis” in translational research of ecology and conservation. This review will allow the development of a set of guidelines or a check list for improving the transparency and reproducibility of decision support systems in ecology and conservation. Finally, I aim to use real-world decision problem case studies to investigate the replication of decision support systems.
+
+## Project Overview
+
+```{r project_overview_table, message=FALSE, echo=FALSE,results='asis'}
+suppressPackageStartupMessages(library(pander))
+suppressPackageStartupMessages(library(dplyr))
+
+dplyr::data_frame(Problem = c("**How do we measure the reproducibility of a DSS?**\\\n \\\n What are the epistemic functions of replications for DSS?\ \n ",
+                              "**What are the reproducibility issues particular to DSSs for EcoConsDM?**\\\n \\\n Causes and solutions of crisis NHST focussed.",
+                              "**Does Eco/ConsDM have a reproducibility problem?**\\\n \\\n Response to Fidler et al. (2017)’s call for assessment of completeness and transparency of methodological and statistical reporting in ecology journals. Extend to decision-making problems for EcoCons.",
+                              "**How do you replicate a DSS?**"),
+                  Description = c("Chapter 1: typology for reproducibility of DSSs", "Chapter 2: QRPs for non-hypothesis testing research.", "Chapter 3: Systematic Review of Reproducibility of DSSs", "Chapter(s) 4 / 5: Replication experiment, case studies"),
+                  `Objective and Outputs` = c("Typology of reproducibility of decisions:\\\n  \\\n * measure of reproducibility \\\n * types of replications \\\n * corresponding epistemic functions of replications", 
+                                              "* Identify reproducibility issues specific to decision-making in EcoCons (what and where in decision process?)\ \n* Expand reproducibility research focus beyond non-hypothetico-deductive model of science.\ \n* Advance initial meta-research on transparency and reproducibility in EcoCons (Fraser et al. 2018).\ \n* Launch further work on proposing standards and technical solutions for mitigating QRPs in DSS dev.", "* Evaluate likely reproducibility of this field. Is there a problem, how bad?\ \n* What reproducibility issues need further research attention?\ \n* Highlight deficiencies in Journal’s reporting policies + propose new reporting policies for relevant journals\ \n* Highlight problem areas during DSS-dev: propose checklist of items to consider guiding decision analysts\ \n* Do different frameworks influence transparency and likely reproducibility of resultant decisions? Assess claim that SDM increases transparency and reproducibility of decisions.", "* Proof-of-concept of Replication of DSS\ \n* Demonstrate application of DSS")) %>% 
+        pander::pandoc.table(keep.line.breaks = TRUE, style = "grid", justify = "left", split.table = Inf)
+```
+
+
+# Environmental Water Allocations: case study in replicating decisions
+
+## Background
+
+## Aims / Objectives
+
+## Proposed Methodology
+
+## Feasibility
+
+# References
